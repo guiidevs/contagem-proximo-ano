@@ -41,9 +41,9 @@ function alterarHorarioAgora(){
     const i_minuto_agora = document.getElementById('minutoagora');
     const i_segundo_agora = document.getElementById('segundoagora');
 
-    i_hora_agora.innerText = getTempo.getHours();
-    i_minuto_agora.innerText = getTempo.getMinutes();
-    i_segundo_agora.innerText = ((getTempo.getSeconds() - 60) * -1) < 10 ? '0' + ((getTempo.getSeconds() - 60) * -1) : ((getTempo.getSeconds() - 60) * -1);
+    i_hora_agora.innerText = getTempo.getHours() < 10 ? '0' + getTempo.getHours() : getTempo.getHours();
+    i_minuto_agora.innerText = getTempo.getMinutes() < 10 ? '0' + getTempo.getMinutes() : getTempo.getMinutes();
+    i_segundo_agora.innerText = getTempo.getSeconds() < 10 ? '0' + getTempo.getSeconds() : getTempo.getSeconds();
 }
 
 setInterval(() => {
