@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron';
+}
+/* header */
+header{
+    text-align: center;
+    margin: 30px 0;
+}
+/* section */
+#container{
+    margin: auto;
+    max-width: 800px;
+}
+
+#tempo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media (min-width: 0px) and (max-width: 450px){
+    #tempo{
+        flex-direction: column;
+    }
+}
+.conteudo{
+    text-align: center;
+    margin: 10px 10px;
+}
+.conteudo > span {
+    font-size: 3rem;
+}
+#datahoje{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#datahoje span{
+    margin-right: 5px;
+}
+#milisegundos{
+    display: none;
+}
+/* footer */
+footer{
+    text-align: center;
+    margin: 40px;
+}
+
+
